@@ -11,39 +11,32 @@
 
 body {
   width: 1600px;
-  z-index: 0;
-  overflow:visible;
 }
-
-header {
-  position: absolute;
+.header {
+  position: relative;
+  width: 1714px;
   height: 798px;
   background: #172755;
   clip-path: polygon(0px 0px, 1600px 0px, 1600px 544px, 0px 798px);
-  border-bottom: 5px solid #ef2a82;
-  z-index: 0;
-  overflow: visible;
 }
-
-header::after {
-  content: "0000000000000000000000000000000000000";
-  position: absolute;
-  bottom: 100px;
+.huita {
+  content: "";
+  bottom: -17px;
   left: 0px;
-  width: 0px;
-  height: 17px;
-  clip-path: polygon(0px 0px, 1600px -254px, 1600px 237px, 0px 17px);
-  background-color: #ef2a82;
-  overflow: visible;
-  z-index: 1;
+  z-index: -1;
+  position: absolute;
+  height: 271px;
+  left: 0px;
+  right: 0px;
+  top: 544px;
+  background: #ef2a82;
+  clip-path: polygon(0px 0px, 1600px 0px, 1600px 17px, 0px 271px);
 }
-
 .main {
   width: 1714;
   display: flex;
   padding: 50px 210px 0 210px;
 }
-
 .main00 {
   display: flex;
   justify-content: flex-start;
@@ -52,14 +45,10 @@ header::after {
   font-family: "Roboto";
   font-style: normal;
   color: #ffffff;
-  z-index: 1;
 }
-
 .leftTopCircle {
   position: absolute;
-  z-index: 0;
 }
-
 .leftTopCircle2 {
   position: absolute;
   top: 50%;
@@ -67,12 +56,10 @@ header::after {
   transform: translate(-26%, -50%);
   z-index: 0;
 }
-
 .main00logo {
   margin-left: 12px;
   z-index: 1;
 }
-
 .main01 {
   display: flex;
   width: 352px;
@@ -90,7 +77,6 @@ header::after {
   flex-grow: 0;
   z-index: 1;
 }
-
 .main02 {
   z-index: 1;
   display: flex;
@@ -105,7 +91,6 @@ header::after {
   text-align: right;
   color: #8794ba;
 }
-
 .SignUp {
   border: 1px solid #465b95;
   border-radius: 68px;
@@ -115,7 +100,6 @@ header::after {
   justify-content: center;
   align-items: center;
 }
-
 .textBlock {
   width: 550px;
   height: 315px;
@@ -123,7 +107,6 @@ header::after {
   display: flex;
   flex-direction: column;
 }
-
 .textBlockTitle {
   font-family: "Roboto";
   font-style: normal;
@@ -135,7 +118,6 @@ header::after {
   order: 0;
   flex-grow: 0;
 }
-
 .textBlockParagrafh {
   font-family: "Roboto";
   font-style: normal;
@@ -149,7 +131,6 @@ header::after {
   flex-grow: 0;
   margin-top: 15px;
 }
-
 .textBlockButton {
   display: flex;
   flex-direction: row;
@@ -172,4 +153,82 @@ header::after {
   order: 1;
   flex-grow: 0;
   border: none;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 38px 210px 0 210px;
+}
+.container01 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.MainFeatures {
+  width: 620px;
+  height: 53px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #172755;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.loremThem {
+  width: 1060px;
+  height: 53px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8794ba;
+  margin-bottom: 81px;
+}
+.shape {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  width: 1180px;
+  height: 164px;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shapeh2 {
+  margin-bottom: 15px;
+  margin-top: 27px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #172755;
+}
+.shapeP {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #8794ba;
+}
+.container02{
+    
 }
