@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./Roboto/Roboto-Black.ttf);
+}
+
+body {
+  width: 1600px;
+  z-index: 0;
+  overflow:visible;
+}
+
+header {
+  position: absolute;
+  height: 798px;
+  background: #172755;
+  clip-path: polygon(0px 0px, 1600px 0px, 1600px 544px, 0px 798px);
+  border-bottom: 5px solid #ef2a82;
+  z-index: 0;
+  overflow: visible;
+}
+
+header::after {
+  content: "0000000000000000000000000000000000000";
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  width: 0px;
+  height: 17px;
+  clip-path: polygon(0px 0px, 1600px -254px, 1600px 237px, 0px 17px);
+  background-color: #ef2a82;
+  overflow: visible;
+  z-index: 1;
+}
+
+.main {
+  width: 1714;
+  display: flex;
+  padding: 50px 210px 0 210px;
+}
+
+.main00 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 184px;
+  font-family: "Roboto";
+  font-style: normal;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.leftTopCircle {
+  position: absolute;
+  z-index: 0;
+}
+
+.leftTopCircle2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-26%, -50%);
+  z-index: 0;
+}
+
+.main00logo {
+  margin-left: 12px;
+  z-index: 1;
+}
+
+.main01 {
+  display: flex;
+  width: 352px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 314px 0 82px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8794ba;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 1;
+}
+
+.main02 {
+  z-index: 1;
+  display: flex;
+  width: 249px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #8794ba;
+}
+
+.SignUp {
+  border: 1px solid #465b95;
+  border-radius: 68px;
+  width: 161px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textBlock {
+  width: 550px;
+  height: 315px;
+  margin: 152px 840px 241px 210px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textBlockTitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.textBlockParagrafh {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  height: 120px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #8794ba;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 15px;
+}
+
+.textBlockButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 80px;
+  gap: 10px;
+  width: 238px;
+  height: 50px;
+  border-radius: 68px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 49px;
+  background: #ef2a82;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 15.5px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border: none;
+}
