@@ -234,7 +234,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  gap: 120px;
+  gap: 50px;
 
   width: 1180px;
   height: 1470px;
@@ -244,7 +244,8 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin-top: 130px;;
+  margin-top: 130px;
+  margin-bottom: 114px;
 }
 .card {
   position: relative;
@@ -253,47 +254,33 @@ body {
   align-items: center;
   padding: 0px;
   gap: 100px;
-
-  width: 1180px;
-  height: 410px;
-
-  /* Inside auto layout */
-
+  /* width: 1180px;
+  height: 410px; */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-
-
 .cardtext {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
   gap: 30px;
-
   width: 480px;
   height: 232px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-
-.cardSvgImage{ 
+.cardSvgImage {
   order: 1;
 }
-
-.cardtext.reverse {
+.cardtext .reverse {
   order: 1;
 }
-
-.cardSvgImage.reverse{ 
+.cardSvgImage .reverse {
   order: 0;
 }
-
 .cardtexth1 {
   font-family: "Roboto";
   font-style: normal;
@@ -328,4 +315,246 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+.pricingPlans {
+  position: relative;
+  background: #172755;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 158px;
+}
+
+.pricingPlansName {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #ffffff;
+  margin: 255px 490px 0 490px;
+}
+
+.pricingPlansText {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8794ba;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.pricingPlansCardAll {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+}
+
+.pricingPlansCard {
+  width: 340px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(15, 31, 75, 0.7);
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  border-radius: 30px;
+  padding-top: 50px;
+}
+
+.pricingPlansCardName {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.pricingPlansCardText {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  text-align: center;
+  /* text / secondary */
+  color: #8794ba;
+  margin-bottom: 37px;
+}
+
+.splitter {
+  content: none;
+  width: 220px;
+  border: 1px solid #2a407c;
+  margin-bottom: 28px;
+}
+
+.pricingPlansCardPrice {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+}
+.pricingPlansCardText2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  text-align: center;
+
+  /* text / secondary */
+
+  color: #8794ba;
+  margin-bottom: 40px;
+}
+.pricingPlansCardButtom {
+  /* display: flex;
+  flex-direction: row; */
+  width: 200px;
+  align-items: center;
+  padding: 15px 80px;
+  gap: 10px;
+  border: 1px solid #2a407c;
+  border-radius: 68px;
+  background-color: #2a407c;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.signupForm {
+  width: 1600px;
+  height: 740px;
+  background: #f8f9ff;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 638px 218px 638px 218px;
+}
+
+.signupFormTextBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.signupFormText01 {
+  width: 431px;
+  height: 80px;
+  align-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  /* or 125% */
+  color: #160637;
+}
+
+.logos {
+  width: 300px;
+  height: 156px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form {
+  position: relative;
+  content: none;
+  width: 480px;
+  height: 480px;
+
+  background: #f9f0ff;
+}
+
+.formInputForm {
+  position: relative;
+  top: -47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 40px;
+  gap: 16px;
+  background: #ffffff;
+  
+  /* Shadow 2 */
+
+  box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
+  border-radius: 8px;
+}
+
+.formInputFormSingUp {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  background: none;
+  border: none;
+  text-align: center;
+  width: 347px;
+  height: 32px;
+  color: #160637;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.formInputFormStart {
+  background: #722ed1;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  padding: 12px 104px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.formInputFormInput {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  width: 348px;
+  height: 51px;
+}
+
+.splitter2 {
+  content: none;
+  width: 336px;
+  border: 1px solid #8989a2;
 }
