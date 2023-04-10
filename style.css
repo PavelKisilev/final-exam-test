@@ -154,7 +154,6 @@ body {
   flex-grow: 0;
   border: none;
 }
-
 .content {
   position: relative;
   display: flex;
@@ -229,6 +228,104 @@ body {
   text-align: center;
   color: #8794ba;
 }
-.container02{
-    
+.container02 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 120px;
+
+  width: 1180px;
+  height: 1470px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-top: 130px;;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 100px;
+
+  width: 1180px;
+  height: 410px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+.cardtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+
+  width: 480px;
+  height: 232px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.cardSvgImage{ 
+  order: 1;
+}
+
+.cardtext.reverse {
+  order: 1;
+}
+
+.cardSvgImage.reverse{ 
+  order: 0;
+}
+
+.cardtexth1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+
+  /* text / main */
+
+  color: #172755;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.cardtextP {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  /* text / secondary */
+
+  color: #8794ba;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
