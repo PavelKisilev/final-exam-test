@@ -19,7 +19,7 @@ body {
   background: #172755;
   clip-path: polygon(0px 0px, 1600px 0px, 1600px 544px, 0px 798px);
 }
-.huita {
+.hu_ta {
   content: "";
   bottom: -17px;
   left: 0px;
@@ -322,7 +322,31 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 158px;
+  clip-path: polygon(0px 254px, 1600px 0px, 1600px 1069px, 0px 1069px);
+  z-index: 1;
+  overflow: visible;
 }
+.pricingPlans:after{
+  width: 1600px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  top: 0%;
+  background-color: #ef2a82;
+  clip-path: polygon(0px 254px, 1600px 0px, 1600px 17px, 0px 272px);
+}
+
+/* 
+.hu_ta2 {
+  width: 1600px;
+  content: "";
+  position: relative;
+  top: -1054px;
+  background-color: #ef2a82;
+  clip-path: polygon(0px 254px, 1600px 0px, 1600px 17px, 0px 272px);
+} */
+
 
 .pricingPlansName {
   font-family: "Roboto";
@@ -333,6 +357,7 @@ body {
   text-align: center;
   color: #ffffff;
   margin: 255px 490px 0 490px;
+  
 }
 
 .pricingPlansText {
@@ -437,33 +462,30 @@ body {
   line-height: 19px;
   /* identical to box height */
   color: #ffffff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .signupForm {
   width: 1600px;
-  height: 740px;
   background: #f8f9ff;
-  display: flex;
   flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding: 638px 218px 638px 218px;
+  /* padding: 638px 218px 638px 218px; */
 }
 
 .signupFormTextBlock {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .signupFormText01 {
+  align-content: center;
+  display: flex;
   width: 431px;
   height: 80px;
-  align-content: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -473,12 +495,25 @@ body {
   color: #160637;
 }
 
+.signupFormText02 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  margin-top: 75px;
+  margin-bottom: 45px;
+  color: #8989a2;
+}
+
 .logos {
   width: 300px;
   height: 156px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  gap: 55px;
 }
 
 .form {
@@ -486,13 +521,18 @@ body {
   content: none;
   width: 480px;
   height: 480px;
-
+  margin-top: 151px;
+  margin-left: 46px;
+  margin-bottom: 109px;
   background: #f9f0ff;
 }
 
 .formInputForm {
+  width: 428px;
+  height: 475px;
   position: relative;
   top: -47px;
+  left: 26px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -500,7 +540,6 @@ body {
   padding: 32px 40px;
   gap: 16px;
   background: #ffffff;
-  
   /* Shadow 2 */
 
   box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
@@ -527,18 +566,20 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
 .formInputFormStart {
-  background: #722ed1;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   /* identical to box height, or 150% */
-  padding: 12px 104px;
+  padding: 12px 54px;
   text-align: center;
-
+  width: 348px;
+  height: 51px;
   color: #ffffff;
+  background: #722ed1;
 }
 
 .formInputFormInput {
@@ -557,4 +598,58 @@ body {
   content: none;
   width: 336px;
   border: 1px solid #8989a2;
+}
+
+.Group35 {
+  display: flex;
+  flex-direction: row;
+  width: 1600px;
+  height: 154px;
+  background: #1f2f5c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 305px;
+}
+
+.Group35ContainerImg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  /* margin: 0 305px 0 305px;   */
+}
+
+.main04 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8794ba;
+}
+
+.main05 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* text / secondary */
+
+  color: #8794ba;
+}
+
+.main06 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
 }
