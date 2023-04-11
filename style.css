@@ -11,29 +11,38 @@
 
 body {
   width: 1600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .header {
   position: relative;
-  width: 1714px;
+  width: 1600px;
   height: 798px;
   background: #172755;
   clip-path: polygon(0px 0px, 1600px 0px, 1600px 544px, 0px 798px);
 }
+
 .hu_ta {
   content: "";
   bottom: -17px;
   left: 0px;
   z-index: -1;
-  position: absolute;
-  height: 271px;
+  position: relative;
+  /* height: 271px; */
   left: 0px;
   right: 0px;
-  top: 544px;
+  top: -255px;
   background: #ef2a82;
   clip-path: polygon(0px 0px, 1600px 0px, 1600px 17px, 0px 271px);
 }
+
+
 .main {
-  width: 1714;
+  width: 1600;
   display: flex;
   padding: 50px 210px 0 210px;
 }
@@ -54,8 +63,31 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-26%, -50%);
-  z-index: 0;
+  z-index: 1;
 }
+
+.mainScreen1 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  transform: translate(121%, 22%);
+  background: url(main-screen.png);
+  /* card / shadow */
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.mainScreen2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-7%, -43%);
+  z-index: 1;
+}
+
 .main00logo {
   margin-left: 12px;
   z-index: 1;
@@ -320,24 +352,31 @@ body {
   position: relative;
   background: #172755;
   display: flex;
-  flex-direction: column;
-  padding-bottom: 158px;
+  flex-direction: column;  
   clip-path: polygon(0px 254px, 1600px 0px, 1600px 1069px, 0px 1069px);
   z-index: 1;
   overflow: visible;
 }
-.pricingPlans:after{
-  width: 1600px;
-  content: "";
+
+.leftTopCircle3 {
   position: absolute;
-  left: 0;
-  bottom: 0%;
-  top: 0%;
-  background-color: #ef2a82;
-  clip-path: polygon(0px 254px, 1600px 0px, 1600px 17px, 0px 272px);
+  left: calc(50% - 2010px / 2 + 800px);
+  /* transform: translate(-16%, -50%); */
+  z-index: 0;
 }
 
-/* 
+.pricingPlans:after {
+  width: 1600px;
+  content: "";
+  position: relative;
+  bottom: 0%;
+  background-color: #ef2a82;
+  clip-path: polygon(0px 254px, 1600px 0px, 1600px 17px, 0px 272px);
+  height: 271px;
+  top: -879px;
+}
+
+/* нет ерунде, выше сделанно нормально. 
 .hu_ta2 {
   width: 1600px;
   content: "";
@@ -346,7 +385,6 @@ body {
   background-color: #ef2a82;
   clip-path: polygon(0px 254px, 1600px 0px, 1600px 17px, 0px 272px);
 } */
-
 
 .pricingPlansName {
   font-family: "Roboto";
@@ -357,7 +395,6 @@ body {
   text-align: center;
   color: #ffffff;
   margin: 255px 490px 0 490px;
-  
 }
 
 .pricingPlansText {
@@ -377,6 +414,7 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 80px;
+  transition: background-color 0.5s ease;
 }
 
 .pricingPlansCard {
@@ -389,6 +427,26 @@ body {
   box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
   border-radius: 30px;
   padding-top: 50px;
+  transition: background-color 0.5s ease;
+}
+
+.pricingPlansCard:hover{
+  background: #FFFFFF;
+  color: #172755;
+}
+
+.pricingPlansCard:hover .pricingPlansCardName{
+  background: #FFFFFF;
+  color: #172755;
+}
+
+.pricingPlansCard:hover .pricingPlansCardButtom{
+  background: #EF2A82;
+  border: 1px solid #EF2A82;
+}
+.pricingPlansCard:hover  .pricingPlansCardPrice{
+  background: #FFFFFF;
+  color: #172755;
 }
 
 .pricingPlansCardName {
@@ -400,18 +458,19 @@ body {
   text-align: center;
   color: #ffffff;
   margin-bottom: 10px;
+  transition: background-color 0.5s ease;
 }
+
 .pricingPlansCardText {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  /* or 27px */
   text-align: center;
-  /* text / secondary */
   color: #8794ba;
   margin-bottom: 37px;
+  transition: background-color 0.5s ease;
 }
 
 .splitter {
@@ -419,6 +478,7 @@ body {
   width: 220px;
   border: 1px solid #2a407c;
   margin-bottom: 28px;
+  transition: background-color 0.5s ease;
 }
 
 .pricingPlansCardPrice {
@@ -429,6 +489,7 @@ body {
   line-height: 35px;
   text-align: center;
   color: #ffffff;
+  transition: background-color 0.5s ease;
 }
 .pricingPlansCardText2 {
   font-family: "Roboto";
@@ -441,7 +502,7 @@ body {
   text-align: center;
 
   /* text / secondary */
-
+  transition: background-color 0.5s ease;
   color: #8794ba;
   margin-bottom: 40px;
 }
@@ -462,6 +523,13 @@ body {
   line-height: 19px;
   /* identical to box height */
   color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+
+
+.backgroundBottom{
+  transform: translateY(-135px)
+  transition: background-color 0.5s ease;
 }
 
 .signupForm {
@@ -610,6 +678,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 305px;
+  transform: translateY(-135px)
 }
 
 .Group35ContainerImg {
